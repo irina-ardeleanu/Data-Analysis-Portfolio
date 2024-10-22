@@ -1,7 +1,7 @@
 # Irina Ardeleanu - Data Analyst Portfolio
-___
+
 ## About
-***
+
 
 With over 18 years of experience across multiple industries, I’ve developed a versatile skillset and am now transitioning to a career in data analytics. My background spans human resources, project management, and marketing, where I’ve built strong analytical abilities, problem-solving skills, and expertise in handling complex data.
 
