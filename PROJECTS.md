@@ -3,7 +3,7 @@ In this section, I will present a list of practical projects that utilize real-w
 
 ## Revenue Metrics and User Analysis
 
-**Code:** 
+**Code:** [Revenue Mtrics and user Analysis](https://github.com/irina-ardeleanu/Data-Analysis-Portfolio/blob/main/projects/sql/revenue%20metrics%20and%20user%20analysis/Revenue%20Metrics%20and%20user%20analysis.sql)
 
 **Dashboard:** [Revenue Metrics and User Analysis](https://public.tableau.com/views/ProiectfinalcursDA_17290084829080/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
