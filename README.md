@@ -9,6 +9,6 @@ As a Program Manager, I led a large-scale outreach campaign, gathering and analy
 
 Recently, I completed a Data Analytics course, deepening my skills in data management, statistical analysis, and data visualization tools. I’m proficient in working with complex datasets and transforming raw data into actionable insights that drive business decisions. I’m excited to apply my analytical mindset and new expertise to solve real-world problems as I embark on this new career path.
 
-You can view my CV in [pdf](https://github.com/irina-ardeleanu/Data-Analysis-Portfolio/blob/main/docs/Irina%20Ardeleanu%20CV%20DA.pdf)
+You can view my CV in [pdf](https://drive.google.com/file/d/1Qcg4RDDzKAvOE2WYBAFirkSmfRnTzP-h/view?usp=sharing)
 
 
