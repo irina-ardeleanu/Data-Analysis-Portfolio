@@ -44,4 +44,9 @@ In this section, I will present a list of practical projects that utilize real-w
 
 **Goal:** To analyze and monitor the user engagement metrics
 
+## Marketing Analytics – Power BI
+Interactive marketing analytics dashboard focused on campaign performance, customer behavior, and purchase drivers.  
+Includes advanced DAX, custom tooltips, dynamic narratives, and filter-independent visuals.
+
+🔗 https://github.com/irina-ardeleanu/Marketing-Analytics-PowerBI
 
