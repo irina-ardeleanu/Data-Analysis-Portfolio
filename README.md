@@ -1,33 +1,91 @@
-# Irina Ardeleanu - Data Analyst Portfolio
+# Hi there! 👋 I'm Irina Ardeleanu
 
-## About
+## DATA & BI ANALYST | Finance, HR & Marketing Background  
+SQL • Python • Power BI • Tableau • Excel • Statistical Analysis
 
+---
 
-With over 18 years of experience across multiple industries, I’ve developed a versatile skillset and am now transitioning to a career in data analytics. My background spans human resources, project management, and marketing, where I’ve built strong analytical abilities, problem-solving skills, and expertise in handling complex data.
+### 🎯 About Me
 
-As a Program Manager, I led a large-scale outreach campaign, gathering and analyzing data from various sources to identify target audiences, track performance, and optimize strategies. I also oversaw the accreditation process, monitored training program quality, and conducted surveys and focus groups, leveraging data-driven insights to improve operations.
+18+ years of cross-functional experience in Finance, HR, Project Management, and Marketing — now focused on data analytics and business intelligence.
 
-Recently, I completed a Data Analytics course, deepening my skills in data management, statistical analysis, and data visualization tools. I’m proficient in working with complex datasets and transforming raw data into actionable insights that drive business decisions. I’m excited to apply my analytical mindset and new expertise to solve real-world problems as I embark on this new career path.
+I've managed and analyzed data across diverse business functions — from financial metrics to employee performance — and I bring a strong understanding of how to connect analytics with real business outcomes.
 
-You can view my CV in [pdf](https://drive.google.com/file/d/1Qcg4RDDzKAvOE2WYBAFirkSmfRnTzP-h/view?usp=sharing)
+---
 
+### 💡 Core Skills
+
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Excel](https://img.shields.io/badge/-Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white)
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat-square&logo=power-bi&logoColor=black)
+![Statistical Analysis](https://img.shields.io/badge/-Statistical%20Analysis-FF6B6B?style=flat-square&logo=statistics&logoColor=white)
+
+**Technical:** SQL | Python (Pandas, NumPy, Matplotlib) | Excel (Advanced) | Tableau | Power BI  
+**Analytical:** Statistical Analysis | Data Visualization | Data Cleaning | Business Intelligence  
+**Business:** Finance | HR Analytics | Marketing Analytics | Project Management
+
+---
 
 ## **Portfolio Projects**
-In this section, I will present a list of practical projects that utilize real-world datasets, briefly describing the approaches taken to analyze the data.
+
+
+## Marketing Analytics – Power BI
+
+**Dashboard:** [Marketing Analytics - Power BI](https://github.com/irina-ardeleanu/Marketing-Analytics-PowerBI)
+
+### 🎯 Objective
+Enable a growing food & beverage retail company to understand their market and customer base.
+
+### 📋 Overview
+Built a comprehensive Power BI dashboard, answering critical business questions: campaign performance across channels, product success metrics, customer demographics, and purchase behavior drivers. The solution transforms raw marketing data into actionable insights through interactive visualizations, custom DAX measures, and dynamic narratives.
+
+### 🔧 Technical Stack
+- **Visualization:** Power BI (DAX, Custom Tooltips, Dynamic Narratives)
+- **Data Processing:** Power Query, Data Modeling
+- **Key Techniques:** Customer segmentation, Campaign attribution, Filter-independent visuals, Cross-filtering
+
+### 📈 Key Business Questions Answered
+- How are our recent marketing campaigns performing?
+- Which products drive the most revenue and engagement?
+- Who are our customers? (demographics, behavior patterns)
+- What factors influence purchase decisions across campaigns?
+
+### 💡 Impact
+Provided the client with their first comprehensive view of their business, transforming scattered marketing data into a clear understanding of campaign effectiveness, customer behavior, and growth opportunities.
+
 
 ## Revenue Metrics and User Analysis
 
-**Code:** [Revenue Mtrics and user Analysis](https://github.com/irina-ardeleanu/Data-Analysis-Portfolio/blob/main/projects/sql/revenue%20metrics%20and%20user%20analysis/Revenue%20Metrics%20and%20user%20analysis.sql)
+**Code:** [Revenue Metrics and user Analysis](https://github.com/irina-ardeleanu/Data-Analysis-Portfolio/blob/main/projects/sql/revenue%20metrics%20and%20user%20analysis/Revenue%20Metrics%20and%20user%20analysis.sql)
 
 **Dashboard:** [Revenue Metrics and User Analysis](https://public.tableau.com/views/ProiectfinalcursDA_17290084829080/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-**Goal:** To analyze and monitor key metrics for an interactive game developer, providing insights into revenues and user behavior.
+### 🎯 Objective
+Monitor revenue streams and user engagement metrics for an interactive game developer to drive data-informed product decisions.
 
-**Description:** In this project, I developed a dashboard dedicated to analyzing and monitoring the most important metrics for an interactive game developer. The dashboard provides a clear and detailed view of revenues and user behavior. The metrics were calculated using SQL, and the data visualization was performed in Tableau.
+### 📋 Overview
+Developed a comprehensive dashboard analyzing monetization and player behavior patterns for a mobile game. Built complex SQL queries to calculate ARPPU, revenue trends (expansion/contraction), churn rate, and cohort-based player retention. The dashboard provides clear insights into player acquisition, engagement, and revenue performance across the game lifecycle.
 
-**Skills:** Joins, CTE, Aggregate Functions, Time Series Analysis, Window Functions, Handling Null Values, Conditional Logic, Data Modeling, Performance Optimization, Business Metrics
+### 🔧 Technical Stack
+- **Data Processing:** SQL Server (CTEs, Window Functions, Aggregate Functions, Date Functions)
+- **Visualization:** Tableau
+- **Key Techniques:** Player cohort analysis, Time series analysis, Monetization tracking, Churn modeling
 
-**Technology:** SQL Server, Tableau
+### 📈 Key Metrics Tracked
+- **Monetization:** ARPPU (Average Revenue Per Paying User), revenue growth/contraction
+- **Player Behavior:** New, recurring, and churned players by cohort
+- **Retention:** Churn rate patterns and player lifecycle analysis
+- **Engagement:** Monthly active users and session trends
+
+### 💡 Gaming Insights
+- Identified seasonal player acquisition patterns (March-July growth spike)
+- Tracked revenue expansion vs. contraction to optimize in-game purchases
+- Analyzed player churn trends to improve retention strategies
+- Monitored recurring player growth indicating game stickiness and engagement
+
+---
 
 ## Sales Dashboard
 
@@ -44,9 +102,11 @@ In this section, I will present a list of practical projects that utilize real-w
 
 **Goal:** To analyze and monitor the user engagement metrics
 
-## Marketing Analytics – Power BI
-Interactive marketing analytics dashboard focused on campaign performance, customer behavior, and purchase drivers.  
-Includes advanced DAX, custom tooltips, dynamic narratives, and filter-independent visuals.
+---
 
-🔗 https://github.com/irina-ardeleanu/Marketing-Analytics-PowerBI
+### 📫 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/irina-ioana-ardeleanu)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:irina.ioana.ardeleanu@gmail.com)
+
 
