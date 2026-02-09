@@ -28,7 +28,7 @@ I've managed and analyzed data across diverse business functions — from financ
 
 ---
 
-## **Portfolio Projects**
+## Portfolio Projects
 
 
 ## Marketing Analytics – Power BI
