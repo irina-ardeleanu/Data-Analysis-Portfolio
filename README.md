@@ -60,7 +60,7 @@ Provided the client with their first comprehensive view of their business, trans
 
 **Code:** [Revenue Metrics and user Analysis](https://github.com/irina-ardeleanu/Data-Analysis-Portfolio/blob/main/projects/sql/revenue%20metrics%20and%20user%20analysis/Revenue%20Metrics%20and%20user%20analysis.sql)
 
-**Dashboard:** [Revenue Metrics and User Analysis](https://public.tableau.com/views/ProiectfinalcursDA_17290084829080/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+**Dashboard:** [Revenue Metrics and User Analysis](https://public.tableau.com/views/PixelPlayStudioRevenueMetricsandPlayerInsights_17721752247350/RevenuePlayerOverview?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### 🎯 Objective
 Monitor revenue streams and user engagement metrics for an interactive game developer to drive data-informed product decisions.
