@@ -1,41 +1,41 @@
 WITH all_months AS (
-    -- Listă cu toate lunile din martie 2022 până în decembrie 2022
+    -- List of all months from March 2022 to December 2022
     SELECT generate_series(DATE '2022-03-01', DATE '2022-12-01', '1 month'::interval) AS month
 ),
 user_first_payments AS (
-    -- Luna primei plăți pentru fiecare utilizator
+    -- First payment month for each user
     SELECT user_id, MIN(DATE_TRUNC('month', payment_date)) AS first_payment_month
     FROM project.games_payments
     GROUP BY user_id
 ),
 user_payments AS (
-    -- Plățile individuale pentru fiecare utilizator și lună
+    -- Individual payments per user per month
     SELECT user_id, DATE_TRUNC('month', payment_date) AS payment_month, SUM(revenue_amount_usd) AS revenue
     FROM project.games_payments
     GROUP BY user_id, payment_month
 ),
 user_all_months AS (
-    -- Toate combinațiile de utilizatori și luni, pentru a include și lunile fără plăți
+    -- All user-month combinations, including months with no payments
     SELECT u.user_id, am.month
     FROM 
         (SELECT DISTINCT user_id FROM project.games_paid_users) u
     CROSS JOIN all_months am
 ),
 user_payments_with_lag AS (
-    -- Toate combinațiile de utilizatori și luni cu plățile reale ; LAG pentru a găsi luna precedentă
+    -- All user-month combinations with actual payments; LAG to retrieve previous month
     SELECT 
         uam.user_id,
         uam.month,
         up.payment_month,
         LAG(up.payment_month) OVER (PARTITION BY uam.user_id ORDER BY uam.month) AS prev_payment_month,
-        COALESCE(up.revenue, 0) AS revenue -- Venitul pentru utilizare ulterioară
+        COALESCE(up.revenue, 0) AS revenue -- Revenue for later use
     FROM 
         user_all_months uam
     LEFT JOIN 
         user_payments up ON uam.user_id = up.user_id AND uam.month = up.payment_month
 ),
 user_grouped AS (
-    -- Utilizatori + datele de plată pentru a obține metricii
+    -- Users + payment data to calculate metrics
     SELECT 
         am.month,
         u.language,
@@ -43,9 +43,9 @@ user_grouped AS (
         COUNT(DISTINCT CASE WHEN up.user_id IS NOT NULL THEN up.user_id END) AS paid_users,
         COUNT(DISTINCT CASE WHEN ufp.first_payment_month = am.month THEN ufp.user_id END) AS new_users,
         COUNT(DISTINCT CASE WHEN ufp.first_payment_month < am.month AND up.user_id IS NOT NULL THEN ufp.user_id END) AS recurring_users,
-        SUM(CASE WHEN ufp.first_payment_month < am.month THEN up.revenue ELSE 0 END) AS mrr, -- Venitul de la utilizatorii recurenti
-        SUM(CASE WHEN ufp.first_payment_month = am.month THEN up.revenue ELSE 0 END) AS new_mrr, -- Venitul de la utilizatorii noi
-        SUM(up.revenue) AS total_revenue -- Venitul total pentru fiecare lună
+        SUM(CASE WHEN ufp.first_payment_month < am.month THEN up.revenue ELSE 0 END) AS mrr, -- Revenue from recurring users
+        SUM(CASE WHEN ufp.first_payment_month = am.month THEN up.revenue ELSE 0 END) AS new_mrr, -- Revenue from new users
+        SUM(up.revenue) AS total_revenue -- Total revenue per month
     FROM 
         all_months am
     LEFT JOIN 
@@ -58,13 +58,13 @@ user_grouped AS (
         am.month, u.language, u.age
 ),
 churned_users AS (
-    -- Utilizatorii churned: au făcut plăți în luna precedentă, dar nu au făcut în luna curentă
+    -- Churned users: made a payment last month but not in the current month
     SELECT 
         u.user_id,
         u.language,
         u.age,
         uam.month AS churned_month,
-        COALESCE(up.revenue, 0) AS churned_revenue -- Venitul din luna precedentă de la utilizatorii churn
+        COALESCE(up.revenue, 0) AS churned_revenue -- Previous month revenue from churned users
     FROM 
         user_payments_with_lag uam
     LEFT JOIN 
@@ -72,8 +72,8 @@ churned_users AS (
     LEFT JOIN 
         user_payments up ON up.user_id = uam.user_id AND up.payment_month = uam.prev_payment_month
     WHERE 
-        uam.prev_payment_month IS NOT NULL -- Utilizatorul a făcut o plată în luna precedentă
-        AND uam.payment_month IS NULL -- Utilizatorul nu a făcut o plată în luna curentă
+        uam.prev_payment_month IS NOT NULL -- User made a payment in the previous month
+        AND uam.payment_month IS NULL -- User did not make a payment in the current month
 ),
 expansion_mrr_calc AS (
     -- Expansion MRR
